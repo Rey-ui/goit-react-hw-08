@@ -7,7 +7,7 @@ const getNavLinkClassNames = ({ isActive }) =>
   clsx(css.headerLink, {
     [css.active]: isActive,
   });
-const ContactsNav = () => {
+const Navigation = () => {
   const isSignedIn = useSelector(selectUserIsSignedIn);
   return (
     <div className={css.headerContainerContacts}>
@@ -27,4 +27,4 @@ const ContactsNav = () => {
   );
 };
 
-export default ContactsNav;
+export default Navigation;

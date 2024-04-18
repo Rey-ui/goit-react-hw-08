@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import RegisterForm from "../components/RegisterForm";
+import RegisterForm from "../components/RegistrationForm";
 import { apiRegisterUser } from "../redux/auth/operations";
 import { Helmet } from "react-helmet-async";
 import css from "./RegistrationPage.module.css";

@@ -3,15 +3,15 @@ import "../reset.css";
 import { AuthNav } from "./AuthNav";
 import { selectUserIsSignedIn } from "../redux/auth/selectors";
 import css from "./Layout.module.css";
-import ContactsNav from "./ContactsNav";
+import Navigation from "./Navigation";
 import { UserMenu } from "./UserMenu";
-const Layout = ({ children }) => {
+const AppBar = ({ children }) => {
   const isSignedIn = useSelector(selectUserIsSignedIn);
   return (
     <div className={css.wrapper}>
       <header className={css.headerContent}>
         <div className={css.headerContainer}>
-          <ContactsNav />
+          <Navigation />
           {isSignedIn ? <UserMenu /> : <AuthNav />}
         </div>
       </header>
@@ -19,4 +19,4 @@ const Layout = ({ children }) => {
     </div>
   );
 };
-export default Layout;
+export default AppBar;

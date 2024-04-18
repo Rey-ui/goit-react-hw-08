@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchContacts, addContact, deleteContact } from "./operations";
+import { apiLogoutUser } from "../auth/operations";
 //https://6611836595fdb62f24ed52bf.mockapi.io/contacts
 const contactsSlice = createSlice({
   name: "contacts",
@@ -48,6 +49,11 @@ const contactsSlice = createSlice({
       .addCase(deleteContact.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
+      })
+      .addCase(apiLogoutUser.fulfilled, (state) => {
+        state.items = [];
+        state.error = null;
+        state.loading = false;
       });
   },
 });

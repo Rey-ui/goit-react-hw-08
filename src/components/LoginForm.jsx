@@ -2,6 +2,8 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 //import css from "./LoginForm.module.css";
 import css from "./RegisterForm.module.css";
+import { useDispatch } from "react-redux";
+import { apiLoginUser } from "../redux/auth/operations";
 const UserRegisterSchema = Yup.object().shape({
   email: Yup.string()
     .required("Email is required!")
@@ -14,11 +16,32 @@ const INITIAL_FORM_DATA = {
   email: "",
   password: "",
 };
-const LoginForm = ({ onLogin }) => {
-  const handleSubmit = (data, formActions) => {
-    onLogin(data);
-    formActions.resetForm();
+const LoginForm = () => {
+  const dispatch = useDispatch();
+  // const onLogin = (formData) => {
+  //   formData.preventDefault();
+  //   const form = formData.currentTarget;
+  //   dispatch(apiLoginUser(formData));
+  //   form.resetForm();
+  // };
+  const handleSubmit = (values) => {
+    dispatch(
+      apiLoginUser({
+        email: values.email,
+        password: values.password,
+      })
+    )
+      .unwrap()
+      .then(() => {
+        console.log("login success");
+      })
+      .catch(() => {
+        console.log("login error");
+      });
+
+    return false;
   };
+
   return (
     <Formik
       validationSchema={UserRegisterSchema}
