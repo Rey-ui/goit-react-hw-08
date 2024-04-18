@@ -1,0 +1,18 @@
+.headerAuthLink {
+  padding: 10px 14px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgb(75, 73, 73);
+  transition: all 0.4s;
+}
+.headerContainerAuth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.active {
+  background-color: rgb(99, 47, 47);
+  box-shadow: 0px 0px 12px 1px rgb(122, 58, 58);
+}

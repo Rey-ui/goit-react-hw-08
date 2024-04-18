@@ -1,0 +1,28 @@
+.userMenuContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.userMenuText {
+  font-size: 18px;
+  font-weight: 600;
+}
+.userMenuButton {
+  padding: 10px 14px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgb(75, 73, 73);
+  transition: all 0.3s;
+}
+.userMenuButton:hover {
+  padding: 10px 14px;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgb(99, 47, 47);
+}
+.userMenuButton:active {
+  transform: scale(1.1);
+}

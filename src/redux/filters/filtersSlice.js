@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { INITIAL_STATE } from "./initialState";
+import { INITIAL_STATE } from "../initialState";
 
 const filtersSlice = createSlice({
   name: "filters",

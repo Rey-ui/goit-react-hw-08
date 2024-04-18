@@ -6,13 +6,18 @@
   align-items: flex-start;
   margin: 10px;
   margin-bottom: 25px;
-  min-width: 260px;
+  /* min-width: 260px; */
 }
 .label {
+  font-size: 18px;
+  font-weight: 600;
 }
 .searchInput {
-  padding: 5px;
+  border: 1px solid rgb(137, 137, 137);
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
   border-radius: 4px;
-  min-width: 260px;
-  border: 1px solid #000;
+  width: 280px;
 }

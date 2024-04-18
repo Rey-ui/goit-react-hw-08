@@ -67,19 +67,23 @@ img {
   align-items: center;
   justify-content: center;
   gap: 3px;
+  font-size: 16px;
 }
 .contactSvg {
 }
 .contactData {
 }
 .contactDelete {
-  padding: 5px 7px;
-  border: 1px solid #696969;
-  border-radius: 3px;
+  padding: 10px 14px;
   font-size: 16px;
-  background-color: #d3d3d3;
-  transition: all 250ms;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgb(75, 73, 73);
+  transition: all 0.3s;
 }
 .contactDelete:hover {
-  background-color: #989898;
+  background-color: rgb(99, 47, 47);
+}
+.contactDelete:active {
+  transform: scale(1.1);
 }

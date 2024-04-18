@@ -1,0 +1,15 @@
+.HomePage {
+  overflow: hidden;
+  display: grid;
+  padding: 0 15px;
+  place-items: center; /* Відцентрувати контент по обома осям */
+  height: 85vh;
+}
+.HomePageTitle {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #333; /* Колір тексту */
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}

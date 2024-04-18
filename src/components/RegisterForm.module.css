@@ -1,4 +1,4 @@
-.contactForm {
+.registerform {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -13,14 +13,19 @@
   border-radius: 4px;
   padding: 20px;
 }
-.contactFormItem {
-  width: 100%;
-  font-size: 16px;
+.registerTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(49, 49, 49);
 }
-.contactFormContent {
+.registerLabel {
+}
+.registerSpan {
+  font-size: 16px;
   font-weight: 600;
 }
-.contactInput {
+.registerInput {
   border: 1px solid rgb(181, 176, 171);
   margin-top: 8px;
   width: 100%;
@@ -29,7 +34,7 @@
   border-radius: 4px;
   background-color: rgb(241, 241, 241);
 }
-.contactAdd {
+.registerButton {
   padding: 10px 14px;
   font-size: 16px;
   color: #ffffff;
@@ -37,9 +42,9 @@
   background-color: rgb(75, 73, 73);
   transition: all 0.3s;
 }
-.contactAdd:hover {
+.registerButton:hover {
   background-color: rgb(99, 47, 47);
 }
-.contactAdd:active {
+.registerButton:active {
   transform: scale(1.1);
 }

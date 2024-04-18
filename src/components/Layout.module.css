@@ -1,0 +1,36 @@
+.wrapper {
+  overflow: hidden;
+}
+.headerContent {
+  background-color: #78807b;
+}
+.headerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px 15px 25px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+.mainContent {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* .headerContainer {
+  background-color: rgb(117, 131, 126);
+} */
+/* .headerContainerLink {
+}
+.headerContainerAuth {
+}
+.headerContainerContacts {
+  display: flex;
+}
+.mainContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+} */
