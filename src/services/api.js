@@ -11,13 +11,11 @@ export const clearToken = () => {
 export const requestSignUp = async (formData) => {
   const { data } = await instance.post("/users/signup", formData);
   setToken(data.token);
-  console.log(data.token);
   return data;
 };
 export const requestSignIn = async (formData) => {
   const { data } = await instance.post("/users/login", formData);
   setToken(data.token);
-  console.log(data.token);
   return data;
 };
 
