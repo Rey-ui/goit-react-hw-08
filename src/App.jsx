@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import { fetchContacts } from "./redux/contacts/operations.js";
 import { lazy, useEffect } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { apiRefreshUser } from "./redux/auth/operations.js";
@@ -14,9 +13,6 @@ const ContactsPage = lazy(() => import("./pages/ContactsPage"));
 function App() {
   const dispatch = useDispatch();
   const isRefreshing = useSelector(selectUserIsRefreshing);
-  useEffect(() => {
-    dispatch(fetchContacts());
-  }, [dispatch]);
   useEffect(() => {
     dispatch(apiRefreshUser());
   }, [dispatch]);
